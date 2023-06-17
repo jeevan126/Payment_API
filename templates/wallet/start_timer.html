@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Timer</title>
+</head>
+<body>
+    <h1>Start Timer</h1>
+    <form method="post" action="{% url 'start_timer' %}">
+        {% csrf_token %}
+        <input type="submit" value="Start Timer">
+    </form>
+</body>
+</html>
